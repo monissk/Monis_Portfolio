@@ -1,9 +1,8 @@
 import { Github, Linkedin, Twitter, Heart } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Github, href: "https://github.com/monissk", label: "GitHub" },
+  { icon: Linkedin, href: "https://linkedin.com/in/monisshaikh/", label: "LinkedIn" },
 ];
 
 const footerLinks = [
@@ -22,11 +21,14 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
-            <a href="#" className="text-xl font-bold tracking-tight">
-              PM<span className="text-primary">.</span>
+            <a
+              href="#"
+              className="flex items-center"
+            >
+              <img src="/favicon.png" alt="logo" className="h-13 w-13 object-contain" />
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Pedro Machado. All rights reserved.
+              © {currentYear} Monis Shaikh. All rights reserved.
             </p>
           </div>
 

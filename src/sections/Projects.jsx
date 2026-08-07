@@ -2,46 +2,46 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "QuickShop an E-Commerce Platform",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "QuickShop is a full-stack e-commerce web application that enables users to browse products, manage a dynamic shopping cart, place orders, and securely authenticate their accounts. Built with Django and JavaScript, the application focuses on responsive design, seamless user experience, and efficient database management.",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+    tags: ["Django", "Python", "HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    link: "https://quickshop-u304.onrender.com/",
+    github: "https://github.com/monissk/QuickShop",
   },
   {
-    title: "E-Commerce Platform",
+    title: "RAG Customer Support Assistant",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "An AI-powered Customer Support Assistant built using Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses from a company knowledge base. The assistant retrieves relevant information from documents before generating responses, reducing hallucinations and improving answer reliability. It also supports conversation memory and human escalation for complex queries.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
+    tags: ["Python", "FastAPI", "LangChain", "LangGraph", "ChromaDB", "OpenAI API", "Hugging", "Embeddings", "REST API"],
+    link: "https://drive.google.com/file/d/1SA-ogq79JxU1nBCL2nTvwOoD3E9HLNtY/view?usp=sharing",
+    github: "https://github.com/monissk/Rag-Customer-Support",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Student Performance Prediction",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "A Machine Learning project that predicts student academic performance based on demographic, academic, and behavioral factors. The model analyzes historical student data to estimate future performance, helping educators identify at-risk students and support data-driven academic decision-making.",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
+    tags: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Jupyter Notebook"],
     link: "#",
-    github: "#",
+    github: "https://github.com/monissk/Academic-Performance-Predictor",
   },
   {
-    title: "Project Management Tool",
+    title: "X-Clone",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+      "A modern social media web application inspired by X (formerly Twitter), featuring a responsive user interface, secure authentication, real-time post interactions, and user profile management. The project demonstrates modern frontend development practices with an intuitive and engaging user experience.",
     image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+    tags: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
     link: "#",
-    github: "#",
+    github: "https://github.com/monissk/X-Clone",
   },
 ];
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-32 relative overflow-hidden">
+    <section id="projects" className="py-28 relative overflow-hidden">
       {/* Bg glows */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
@@ -49,18 +49,17 @@ export const Projects = () => {
         {/* Section Header */}
         <div className="text-center mx-auto max-w-3xl mb-16">
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-            Featured Work
+            Featured Projects
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
             Projects that
             <span className="font-serif italic font-normal text-white">
               {" "}
-              make an impact.
+              Showcase My Skills.
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A selection of my recent work, from complex web applications to
-            innovative tools that solve real-world problems.
+            A collection of Full Stack, AI, and Machine Learning projects that demonstrate my ability to design, develop, and deploy real-world applications using modern technologies.
           </p>
         </div>
 
@@ -134,10 +133,16 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
-            View All Projects
-            <ArrowUpRight className="w-5 h-5" />
-          </AnimatedBorderButton>
+          <a
+            href="https://github.com/monissk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AnimatedBorderButton>
+              View All Projects
+              <ArrowUpRight className="w-5 h-5" />
+            </AnimatedBorderButton>
+          </a>
         </div>
       </div>
     </section>

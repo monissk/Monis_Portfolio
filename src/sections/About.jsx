@@ -1,35 +1,35 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { Code2, Puzzle, BrainCircuit, BookOpen } from "lucide-react";
 
 const highlights = [
   {
     icon: Code2,
-    title: "Clean Code",
+    title: "Full Stack Development",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Building responsive, scalable, and database-driven web applications using React, Django, FastAPI, and modern web technologies.",
   },
   {
-    icon: Rocket,
-    title: "Performance",
+    icon: BrainCircuit,
+    title: "Artificial Intelligence",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Developing AI-powered applications with Machine Learning, LangChain, LangGraph, and LLMs to solve real-world problems.",
   },
   {
-    icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    icon: Puzzle,
+    title: "Problem Solving",
+    description: "Strengthening analytical thinking through Data Structures, Algorithms, and efficient software design to build reliable applications.",
   },
   {
-    icon: Lightbulb,
-    title: "Innovation",
+    icon: BookOpen,
+    title: "Continuous Learning",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Continuously exploring emerging technologies, improving development skills, and adapting to modern software engineering practices.",
   },
 ];
 
 export const About = () => {
   return (
-    <section id="about" className="py-32 relative overflow-hidden">
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="about" className="py-28 relative overflow-hidden">
+      <div className="container mx-auto px-6 md:px-10 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column */}
           <div className="space-y-8">
@@ -49,30 +49,17 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I am a Full Stack Developer and final-year Computer Science and Business Systems student passionate about building scalable web applications and AI-powered solutions. My interests span Full Stack Development, Machine Learning, and Generative AI, where I enjoy turning ideas into practical, real-world applications.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                I work primarily with React, Django, FastAPI, Python, and Tailwind CSS to develop responsive, user-friendly, and database-driven applications. I also have experience building AI-powered projects using LangChain, LangGraph, ChromaDB, and modern LLM technologies, with a focus on creating efficient and intelligent software solutions.
               </p>
-              <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
-              </p>
+              
             </div>
 
-            <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
+            <div className="glass rounded-2xl p-4 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "My goal is to build innovative, scalable, and user-focused applications that solve real-world problems while continuously learning and growing as a software engineer."
               </p>
             </div>
           </div>
