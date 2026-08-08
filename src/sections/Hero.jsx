@@ -177,7 +177,7 @@ export const Hero = () => {
       </div>
 
       <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-50
       animate-fade-in animation-delay-800"
       >
         <a
