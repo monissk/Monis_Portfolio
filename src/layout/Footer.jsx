@@ -20,7 +20,7 @@ export const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Copyright */}
-          <div className="text-center md:text-left">
+          <div className="hidden md:block text-center md:text-left">
             <a
               href="#"
               className="flex items-center"

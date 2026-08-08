@@ -148,7 +148,7 @@ export const Hero = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="mt-20 animate-fade-in animation-delay-600">
+        <div className="mt-20 animate-fade-in animation-delay-100">
           <p className="text-sm text-muted-foreground mb-6 text-center">
             Technologies I work with
           </p>
