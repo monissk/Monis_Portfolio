@@ -25,7 +25,7 @@ const projects = [
       "A Machine Learning project that predicts student academic performance based on demographic, academic, and behavioral factors. The model analyzes historical student data to estimate future performance, helping educators identify at-risk students and support data-driven academic decision-making.",
     image: "/projects/project3.png",
     tags: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Jupyter Notebook"],
-    link: "#",
+    link: "https://github.com/monissk/Academic-Performance-Predictor",
     github: "https://github.com/monissk/Academic-Performance-Predictor",
   },
   {
@@ -34,7 +34,7 @@ const projects = [
       "A modern social media web application inspired by X (formerly Twitter), featuring a responsive user interface, secure authentication, real-time post interactions, and user profile management. The project demonstrates modern frontend development practices with an intuitive and engaging user experience.",
     image: "/projects/project4.png",
     tags: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
-    link: "#",
+    link: "https://github.com/monissk/X-Clone",
     github: "https://github.com/monissk/X-Clone",
   },
 ];
@@ -76,23 +76,39 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+
+                {/* Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60 z-10" />
+
+                {/* Mobile Click Area */}
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 z-20 md:hidden"
+                  aria-label={`Open ${project.title}`}
+                />
+
+                {/* Desktop Overlay */}
                 <div
-                  className="absolute inset-0 
-                bg-gradient-to-t from-card via-card/50
-                 to-transparent opacity-60"
-                />
-                {/* Overlay Links */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  className="absolute inset-0 z-30 hidden md:flex items-center justify-center gap-4
+               opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
+
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <Github className="w-5 h-5" />
@@ -102,7 +118,7 @@ export const Projects = () => {
 
               {/* Content */}
               <div className="p-6 space-y-4">
-                <div className="flex items-start justify-between">
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-start justify-between">
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
@@ -112,7 +128,7 @@ export const Projects = () => {
                    group-hover:translate-x-1 
                    group-hover:-translate-y-1 transition-all"
                   />
-                </div>
+                </a>
                 <p className="text-muted-foreground text-sm">
                   {project.description}
                 </p>
