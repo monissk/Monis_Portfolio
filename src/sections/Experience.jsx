@@ -4,7 +4,7 @@ const experiences = [
     role: "Agentic AI Intern",
     company: "Innomatics Research Labs",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
+      "Worked on Generative AI and Agentic AI projects using Python, FastAPI, LangChain, LangGraph, and LLM technologies. Built RAG-based applications, implemented prompt engineering workflows, developed REST APIs, and explored AI-driven solutions for real-world use cases.",
     technologies: ["Python","FastAPI","LLMs","LangChain","Prompt Engineering"],
     current: false,
   }
