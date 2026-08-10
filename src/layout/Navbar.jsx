@@ -42,8 +42,6 @@ export const Navbar = () => {
             {navLinks.map((link, index) => (
               <a
                 href={link.href} 
-                target="_blank"
-                rel="noopener noreferrer"
                 key={index}
                 className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
               >
@@ -74,8 +72,6 @@ export const Navbar = () => {
             {navLinks.map((link, index) => (
               <a
                 href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
                 key={index}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-lg text-muted-foreground hover:text-foreground py-2"
